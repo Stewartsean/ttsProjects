@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Create a New Student</h1>
+		<form action="#" th:action="@{/student/new}" th:object="${student}"
+			method="post">
+
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Student id"
+					th:field="*{id}" />
+			</div>
+
+			<div class="form-group">
+				<input type="text" class="form-control"
+					placeholder="Your First Name Here..." th:field="*{firstName}" />
+			</div>
+
+			<div class="form-group">
+				<input type="text" class="form-control"
+					placeholder="Your Last Name Here" th:field="*{lastName}" />
+			</div>
+			<div>
+				<input type="text" class="form-control"
+					placeholder="Your adjective Name here" th:field="{adjName}" />
+			</div>
+			<button class="btn btn-primary">Submit Your Post</button>
+		</form>
+	</div>
+</body>
+</html>
