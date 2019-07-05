@@ -1,0 +1,1 @@
+INSERT INTO user (id, fName, lName, age) VALUES (1, 'Sean', 'Stewart', 21);
