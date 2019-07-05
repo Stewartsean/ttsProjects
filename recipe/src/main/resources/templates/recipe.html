@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Recipe</title>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li th:text = "${recipe.name)"></li>
+				<li th:text = "${recipe.numIngredients)"></li>
+				<li th:text = "${recipe.prepTime)"></li>
+			</ul>
+		</div>
+	</body>
+</html>
